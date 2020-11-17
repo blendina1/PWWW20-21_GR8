@@ -1,10 +1,14 @@
 html {
     scroll-behavior: smooth;
     font-family:Georgia,Myriad-Roman,AdobeInvisFont;
+    overflow-x: hidden;
 }
+
 
 body {
     margin: 0px;
+    overflow-x: hidden;
+    
 }
 .nav {
     margin: 10px 5px;
@@ -132,4 +136,38 @@ body {
     color: #666666;
     padding: 0px 14px;
     
+}
+
+.topstory {
+    padding: 35px 0px;
+}
+.topstory img{
+  float: left;
+  background: #555;
+}
+.topstory h1 {
+  position: relative;
+  top: 50px;
+  left: 10px;
+  margin: 20px;    
+  font-size:84px;
+  text-align: center;
+  color:#666666;
+}
+.topstory p {
+    position: relative;
+    top: 5px;
+    left: 290px;
+    font-size:24px;
+    padding: 10px 550px;
+}
+#readmore {
+    position:relative;
+    left:0px;
+}
+#readmore a {
+    color: #FF9900;
+    position:relative;
+    left: 290px;
+    text-decoration: none;
 }
