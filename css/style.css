@@ -1,7 +1,11 @@
 html {
     scroll-behavior: smooth;
+    font-family:Georgia,Myriad-Roman,AdobeInvisFont;
 }
 
+body {
+    margin: 0px;
+}
 .nav {
     margin: 10px 5px;
 }
@@ -14,13 +18,11 @@ html {
 
 
 .navbar {
-    
     background-color: #2D2928;
     display: grid;
     grid-template-columns: 50% 50%;
     text-decoration: none;
     padding: 12px 12px;
-    font-family: Georgia;
     color: #C4C4C4;
 }
 
@@ -33,7 +35,6 @@ html {
 .nav>a {
     display: flex;
     text-decoration: none;
-    font-family: Georgia;
     color: #C4C4C4;
     
 }
@@ -81,4 +82,31 @@ html {
     display: grid;
     grid-template-columns: 30% 70%;
     background-color: #fff;
+}
+
+.columnist h1 {
+    background-color: #FFFFFF;
+    /*padding: 0px 0 0px 0x;*/
+    margin: 0px;
+    margin-top: 35px;
+    font-size: 46px;
+    font-weight: 500;
+    color: #666666;
+}
+.columnist img {
+    /*float: right;*/
+   /*padding-left: 5px;*/
+    /*padding-right: 1.7vmax;*/
+}
+
+.letterC {
+    font-size: 130%;
+    margin-left: 20px;
+}
+
+.columnist p{
+    font-size:12;
+    font-weight: 0;
+    color: #999999;
+    margin:0px 0px 35px 20px;
 }
