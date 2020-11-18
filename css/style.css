@@ -169,3 +169,63 @@ body {
     left: 290px;
     text-decoration: none;
 }
+.columns{
+    margin: 40px 0 0;
+    position: relative;
+}
+
+.box1{
+    position: relative;
+    width:300px;
+    margin: 40px;
+}
+/* stilizimi i tekstit*/
+.style1{
+    font-size: 18px;
+    line-height: 22px;
+}
+/* stilizimi i dates*/
+.style2{
+    color: #989898;
+    font-size: 12px;
+    line-height: 17px;
+}
+/*stilizimi i "Read Full Story"*/
+.style3{
+    color: orange;
+    font-size: 12px;
+    line-height: 17px;
+}
+/*stilizimi i kornizes*/
+.korniza{
+    margin: 8px 0 0;
+    padding: 1px 0;
+    position:relative;
+    background: #e1e1e1;
+}
+.korniza_color{
+    margin: 0 auto;
+    padding: 9px 0;
+    position: relative;
+    width: 298px;
+    background: #ffffff;
+}
+/* stilizimi i storjes*/
+.story1{
+    height: 380px;
+    margin: 0 auto;
+    width: 280px;
+    background: #333333
+}
+.box2{
+    margin: 40px 0 0;
+    position: relative;
+    
+}
+
+.story2{
+    height: 340px;
+    margin: 0 auto;
+    width: 280px;
+    background: #333333;
+}
