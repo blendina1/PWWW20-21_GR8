@@ -229,3 +229,43 @@ body {
     width: 280px;
     background: #333333;
 }
+#footer {width: 1000px; }
+#part1 {
+    width: 400px;
+    float:left;
+    clear: both;
+    list-style-type: none;
+}
+#part2 {
+    float: left;;
+    width: 600px;
+    list-style-type: none;
+}
+
+
+#col1 {
+    width: 200px;
+    float: left;
+    clear: both;
+}
+
+#col2 {
+    width: 200px;
+    float: left;
+}
+
+#col3 {
+    width: 200px;
+    float: left;
+}
+
+#col4 {
+    width: 200px;
+    float: left;
+}
+
+#col5 {
+    width: 200px;
+    float: right;
+    
+}
