@@ -192,6 +192,7 @@ body {
 }
 /*stilizimi i "Read more"*/
 .style3{
+    text-decoration: none;
     color: orange;
     font-size: 12px;
     line-height: 17px;
