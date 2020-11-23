@@ -170,14 +170,14 @@ body {
     text-decoration: none;
 }
 .columns{
-    margin: 40px 0 0;
+    margin: 40px;
     position: relative;
+    column-count: 3;
 }
 
 .box1{
     position: relative;
     width:300px;
-    margin: 40px;
 }
 /* stilizimi i tekstit*/
 .style1{
@@ -190,7 +190,7 @@ body {
     font-size: 12px;
     line-height: 17px;
 }
-/*stilizimi i "Read Full Story"*/
+/*stilizimi i "Read more"*/
 .style3{
     color: orange;
     font-size: 12px;
@@ -203,7 +203,7 @@ body {
     position:relative;
     background: #e1e1e1;
 }
-.korniza_color{
+.ngjyra_kornizes{
     margin: 0 auto;
     padding: 9px 0;
     position: relative;
@@ -218,13 +218,57 @@ body {
     background: #333333
 }
 .box2{
-    margin: 40px 0 0;
+    margin: 26px 0 0;
     position: relative;
-    
 }
-
 .story2{
     height: 340px;
+    margin: 0 auto;
+    width: 280px;
+    background: #333333;
+}
+.box3{
+    position: relative;
+    width: 300px;
+}
+
+
+.story3{
+    height: 320px;
+    margin: 0 auto;
+    width: 280px;
+    background: #333333;
+}
+.box4{
+    margin: 26px 0 0;
+    position: relative;
+
+}
+.story4{
+    height: 380px;
+    margin: 0 auto;
+    width: 280px;
+    background: #333333;
+
+}
+.box5{
+    position: relative;
+    width: 300px;
+}
+
+.story5{
+    height: 220px;
+    margin: 0 auto;
+    width:280px;
+    background: #333333;
+}
+.box6{
+    margin: 26px 0 0;
+    position: relative;
+}
+
+.story6{
+    height:530px;
     margin: 0 auto;
     width: 280px;
     background: #333333;
