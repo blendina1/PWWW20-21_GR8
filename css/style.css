@@ -274,3 +274,25 @@ body {
     width: 280px;
     background: #333333;
 }
+.footeri{
+    width: 1264px;
+    height:75px;
+    padding: 1px 0 26px;
+    position: relative;
+    background: #232323;
+}
+
+.row{
+    display: table;
+    margin: 23px auto 0;
+    position: relative;
+}
+#text-1{
+    display: inline-block;
+    color: #919191;
+}
+#text-2{
+    display: inline-block;
+    margin: 0 0 0 480px;
+    color: #919191;
+}
