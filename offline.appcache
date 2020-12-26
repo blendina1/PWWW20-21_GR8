@@ -1,0 +1,19 @@
+CACHE MANIFEST
+# 2020-12-26 v1.0.0
+/css/style.css
+/images/search.png
+/images/banerilogo.jpg
+/images/bradpitt.jpg
+/images/bebe.jpg
+/images/donald.jpg
+/images/dua.jpg
+/images/jennifer.jpg
+/images/kim.jpg
+/images/rihanna.jpg
+/main.js
+
+NETWORK:
+login.asp
+
+FALLBACK:
+/html/ /projekt.html
