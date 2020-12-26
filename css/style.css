@@ -12,6 +12,7 @@ body {
 }
 .nav {
     margin: 10px 5px;
+    
 }
 
 
@@ -21,6 +22,7 @@ body {
 }
 
 
+
 .navbar {
     background-color: #2D2928;
     display: grid;
@@ -28,6 +30,8 @@ body {
     text-decoration: none;
     padding: 12px 35px;
     color: #C4C4C4;
+    
+    
 }
 
 .nav {
@@ -43,53 +47,29 @@ body {
    
 }
 
-
-
-.searchForm {
+.search-bar{
+    position: absolute;  
+    right: 1.5%;  
+    top: 1.5%;
+    display: inline-block;
+}
+.search-bar input{
+    padding: 3px 10px;
+    border-color: #2e3f51;
     background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
     border-radius: 50px;
+    color: #666666;
+    height: 26px;
 }
-.searchButton {
-    position:absolute;
-    right:10px;
-    top:14px;
-    height: 20px;
-    width: 20px;
-    border-radius: 50px;
-}
-
-.searchBar {
-    background-color: #FFFFFF;
-    border: 0px solid #FFFFFF;
-    border-radius: 50px;
-    
-}
-
-.searchImg {
-    position:absolute;
-    right:1px;
-    top:2px;
-    height: 12px;
-    width: 12px;
-        
-}
-
-.searchForm {
-    float: right;
-    width: 23%;
-    background-color: #FFFFFF;
-    padding:0 5px 0 0;
-    height: 20px;
-    border: 1px solid #FFFFFF;
-    border-radius: 50px;
-}
-
-.secondaryBar {
-    padding: 1.9em 1.2em;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    background-color: #fff;
+.search-bar img{
+    width: 10px;
+    height: 10px;
+    right: 5%;
+    top: 10%;
+    background-color: #2D2928;
+    padding: 8px;
+    border-radius: 45%;
+    position: absolute;
 }
 
 .columnist {
@@ -124,11 +104,10 @@ body {
 }
 
 .menyja {
-    width:100%
-    display: grid;
+    width:100%;
     grid-template-columns: 50% 50%;
     text-decoration: none;
-    padding: 0px 20px;
+    padding: 0px 25px;
     color: #C4C4C4;
 }
 
@@ -139,33 +118,41 @@ body {
     
 }
 
-.topstory {
+#topstory {
     padding: 35px 0 100px 0;
-    margin-bottom:100px;
+    margin-bottom:20px;
 }
-.topstory img{
+#topstory img{
   float: left;
   background: #555;
 }
-.topstory h1 {
+#topstory h1 {
   padding-top:40px;
   padding-right: 45px;
-  text-align:center;
+  text-align:left;
   margin: 20px;   
   font-size:56px;
-  text-align: center;
   color:#666666;
+  display: inline-block;
+  weight:323px;
+  height:98px;
+  
 }
-.topstory img{
+#topstory img{
     margin:12px 40px;
 }
-.topstory p {
+#topstory p {
     font-size:16px;
-    margin: 50px 20px 20px 40px;
+    text-align:left;
+    display:inline-block;
+    width:348px;
+    height:82px;
+    margin:25px 25px 0 25px;
+    color:#666666;
 }
 #readmore {
     float:left;
-    margin: 0 0 50px 0;
+    margin-top:10px;
 }
 #readmore a {
     
