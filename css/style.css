@@ -308,10 +308,13 @@ body {
 }
 .rrethNesh{
     background-color: #FFFFFF;
-    padding: 0px 20px;
-    margin: 35px 35px 0 500px;
+    padding: 20px 20px;
+    margin: 35px 180px 0 100px;
     font-size: 20px;
-    font-weight: 500;
     color: #666666; 
     font-family: 'Verdana',sans-serif;
 }
+/*.permbajtjaRRethNesh{
+    padding: 5px 5px;
+    margin: 10px 10px;
+}*/
