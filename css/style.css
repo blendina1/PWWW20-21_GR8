@@ -318,3 +318,17 @@ body {
     padding: 5px 5px;
     margin: 10px 10px;
 }*/
+.wallphoto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#reklamoni{
+    font-size:16px;
+    width:488px;
+    height:200px;
+    margin:25px 25px 150px 400px;
+    color:#666666;
+    background-color: #b9b8b85e;
+}
