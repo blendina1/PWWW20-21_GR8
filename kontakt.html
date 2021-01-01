@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!--Application Cache- mundesia e perdorimit te ueb faqes edhe kur jemi offline -->
+	<html manifest="offline.appcache">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>SHOWBIZ (GRUPI 8)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	<script type="text/javascript" src="js/javascript.js"></script>
+	<script>
+	function validoje() {
+		var x = document.forms["forma"]["emaili"].value;
+		if(x === "") {
+			alert("Ju lutem shkruani email address-en tende");
+			return false;
+		}
+		var formati = new RegExp(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/);
+		var numri = document.forms["forma"]["numri"].value;
+		if(formati.test(numri) == false) {
+			alert("Numri juaj " + numri + " eshte gabim");
+			return false;
+		}
+		var y = document.forms["forma"]["mesazhi"].value;
+		if(y.length <= 20) {
+			alert("Mesazhi juaj nuk mund te jete me pak se 20 karaktere.");
+			return false;
+		}
+		var z = document.getElementById("kushtet");
+		if(z.checked === false) {
+			alert("Ju duhet qe te lexoni dhe pranoni kushtet e perdorimit.");
+			return false;
+		} else {
+			sesionidhelocal();
+		}
+	}
+
+	function sesionidhelocal() {
+		if(sessionStorage) {
+			var emaili = document.getElementById('emaili').value;
+			var numritel = document.getElementById('numri').value;
+			sessionStorage.setItem('emailiperdorur', emaili);
+			sessionStorage.setItem('numriperdorur', numritel);
+		} else {
+			alert("Na falni,browser-i juaj nuk e perkrah Session Storage");
+		}
+		if(localStorage) {
+			var emaili = document.getElementById('emaili').value;
+			var numritel = document.getElementById('numri').value;
+			localStorage.setItem('Emailperdorur', emaili);
+			localStorage.setItem('Numriperdorur', numritel);
+		} else {
+			alert("Na falni,browser-i juaj nuk e perkrah Local Storage");
+		}
+	}
+	</script>
+	<style>
+	* {
+		font-family: Georgia, Myriad-Roman, AdobeInvisFont;
+	}
+	
+	.kontakt1 {
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+	
+	.kontakt1 p {
+		font-size: 14px;
+		line-height: 1.7;
+		color: #666666;
+		margin: 0px;
+	}
+	
+	input {
+		outline: none;
+		border: none;
+	}
+	
+	textarea {
+		outline: none;
+		border: none;
+	}
+	
+	textarea:focus,
+	input:focus {
+		border-color: transparent !important;
+	}
+	
+	.kontakt1 button {
+		outline: none !important;
+		border: none;
+	}
+	
+	.kontakt1 iframe {
+		border: none !important;
+	}
+	
+	.kontakt1 {
+		width: 100%;
+		min-height: 100%;
+		padding: 15px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.kontakt1-permbajtja {
+		width: 1163px;
+		background: #2D2928;
+		border-radius: 40px;
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 90px 130px 88px 148px;
+	}
+	
+	.kontakt1-pic {
+		width: 296px;
+	}
+	
+	.kontakt1-pic img {
+		max-width: 100%;
+	}
+	
+	.kontakt1-permbajtja p {
+		font-size: 18px;
+		color: #C4C4C4;
+	}
+	
+	.kontakt1-form {
+		width: 390px;
+	}
+	
+	.kontakt1-form-title {
+		display: block;
+		font-size: 34px;
+		color: #C4C4C4;
+		line-height: 1.2;
+		text-align: center;
+		padding-bottom: 44px;
+		-webkit-text-stroke: 1px #C4C4C4;
+	}
+	
+	input.input1 {
+		height: 50px;
+		border-radius: 25px;
+		padding: 0 30px;
+	}
+	
+	input.input1+.shadow-input1 {
+		border-radius: 25px;
+	}
+	
+	textarea.input1 {
+		min-height: 150px;
+		border-radius: 25px;
+		padding: 12px 30px;
+	}
+	
+	textarea.input1+.shadow-input1 {
+		border-radius: 25px;
+	}
+	
+	.wrap-input1 {
+		position: relative;
+		width: 100%;
+		z-index: 1;
+		margin-bottom: 20px;
+	}
+	
+	.input1 {
+		display: block;
+		width: 100%;
+		background: #e6e6e6;
+		font-size: 15px;
+		line-height: 1.5;
+		color: #666666;
+	}
+	
+	.shadow-input1 {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		box-shadow: 0px 0px 0px 0px;
+		color: white;
+	}
+	
+	.input1:focus+.shadow-input1 {
+		-webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+		animation: anim-shadow 0.5s ease-in-out forwards;
+	}
+	
+	@-webkit-keyframes anim-shadow {
+		to {
+			box-shadow: 0px 0px 80px 30px;
+			opacity: 0;
+		}
+	}
+	
+	.kontakt1-permbajtja-form-btn {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.kontakt1-form-btn {
+		min-width: 193px;
+		height: 50px;
+		border-radius: 25px;
+		background: #57b846;
+		font-size: 15px;
+		line-height: 1.5;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 25px;
+	}
+	
+	.kontakt1-form-btn:hover {
+		background: black;
+		color: #57b846;
+	}
+	
+	.titullibox2 {
+		display: block;
+		font-size: 34px;
+		color: #C4C4C4;
+		text-align: center;
+		padding-bottom: 20px;
+		padding-top: 50px;
+		-webkit-text-stroke: 1px #C4C4C4;
+	}
+	
+	#box2 {
+		border-style: ridge;
+		border-radius: 25px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		width: 112%;
+		height: 112%;
+		box-shadow: 15px 15px 10px dimgrey;
+		font-size: 20px;
+		color: #C4C4C4;
+		text-shadow: 20px 20px 20px black;
+		padding-bottom: 20px;
+		background-color: transparent;
+		background-image: url("images/uni.png");
+		background-repeat: no-repeat;
+		background-attachment: inherit;
+		background-position: right;
+	}
+	
+	#box2 h2 {
+		text-align: center;
+		padding-top: 10px;
+		font-size: 35px;
+		padding: 0;
+		margin: 0;
+	}
+	
+	#box2 h3 {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		padding-top: 0;
+		font-size: 20px;
+	}
+	
+	#box2 a {
+		text-decoration: none;
+		color: yellow;
+	}
+	
+	#checkboxi label {
+		font-size: 20px;
+		color: #C4C4C4;
+		text-decoration: underline;
+	}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="navbar">
+			<div class="nav"> <a href="#menyjakryesore">Menyja kryesore</a> | <a href="#topstory">Storia Kryesore</a> | <a href="#postetjera">Storiet</a> | <a href="#fundifaqes">Fundi i Faqes</a> </div>
+			<div class="search-bar">
+				<form method="GET" action=""> <img src="images/search.png" alt="logoja e search-it">
+					<input type="text" name="search"> </form>
+			</div>
+                </div>
+	</header>
+	<div class="columnist">
+		<h1><span class="letterC">S</span>HOWBIZ</h1>
+		<p>T&#235; gjitha lajmet rreth showbiz-it vet&#235;m tek ne!</p> <img src="images/banerilogo.png" width="468" height="60" alt="LOGO 468 x 60px" /> </div>
+	<hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+	<div class="menyja" id="menyjakryesore">
+		<p> <a href="projekt.html"> BALLINA </a> | <a href="DergoLajm.html"> DERGO LAJM </a> | <a href="kontakt.html"> NA KONTAKTO </a> | <a href="AboutUs.html"> RRETH NESH </a> | <a href="Reklamoni.html">REKLAMONI ME NE</a> | <a onclick="ThemeZeze();" href="#"> ERR&Euml;T </a> | <a onclick="ThemeNormale();" href="#">NORMAL</a> </p>
+	</div>
+	<section>
+		<hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+		<div class="kontakt1">
+			<div class="kontakt1-permbajtja">
+				<div class="kontakt1-pic"> <img src="images/img-01.png" alt="fotoja per kontakt"> </div>
+				<form name="forma" class="kontakt1-form" method="get" action="http://www.randyconnolly.com/tests/process.php" onsubmit="return validoje()"> <span class="kontakt1-form-title">
+    <strong>Na kontaktoni</strong> p&euml;r &ccedil;do <em>k&euml;rkes&euml;/ankes&euml;</em> q&euml; keni!
+</span>
+					<div class="wrap-input1">
+						<input class="input1" type="text" name="name" pattern="[a-zA-Z]+" placeholder="Emri"> <span class="shadow-input1"></span> </div>
+					<div class="wrap-input1">
+						<input class="input1" type="email" id="emaili" name="emaili" autocomplete="on" placeholder="Email address-a juaj (p.sh. emri@domain.com)"> <span class="shadow-input1"></span> </div>
+					<div class="wrap-input1">
+						<input class="input1" type="tel" id="numri" autocomplete="on" placeholder="Numri i telefonit (p.sh. 04X-XXX-XXX)"> <span class="shadow-input1"></span> </div>
+					<div class="wrap-input1">
+						<input class="input1" type="text" name="Titulli" placeholder="Titulli" required> <span class="shadow-input1"></span> </div>
+					<div class="wrap-input1">
+						<textarea class="input1" name="mesazhi" placeholder="Mesazhi"></textarea> <span class="shadow-input1"></span> </div>
+					<p> R&euml;nd&euml;sia e <em>k&euml;rkes&euml;s/ankes&euml;</em>s suaj?</p>
+					<div class="wrap-input1">
+						<input class="input1" type="range" name="range" min="1" max="10" step="1"> <span class="shadow-input1"></span> </div>
+					<div class="wrap-input1" id="checkboxi" style="text-align:left;">
+						<input type="checkbox" id="kushtet" name="kushtet" value="kushtet">
+						<label> Duke selektuar k&euml;t&euml; checkbox,tregoj q&euml; kam lexuar dhe i pranoj t&euml; gjitha kushtet e p&euml;rdorimit.</label> <span class="shadow-input1"></span> </div>
+					<div class="kontakt1-permbajtja-form-btn">
+						<button class="kontakt1-form-btn"> <span>
+                                                     D&Euml;RGO
+                                                                                   </span> 
+                                                </button>
+					</div>
+				</form> <span class="titullibox2">
+    M&euml;nyra tjera p&euml;r t&euml; na kontaktuar:
+</span>
+				<div id="box2">
+					<h2>Andrin Miftari</h2>
+					<h3>Student n&euml; FSHMN </h3> <address>
+
+ <ul>
+    
+  <li>Rr Ilaz Kodra,Prishtin&euml;</li>
+  <li><a href="tel:383-45-354-200">045-354-200</a></li>
+  <li><a href="mailto:andrin.miftari@student.uni-pr.edu">andrin.miftari@student.uni-pr.edu</a></li>
+   
+</ul>  
+      </address> </div>
+				<div id="box2">
+					<h2>Agnesa  Zeqiri</h2>
+					<h3>Student-e n&euml; FSHMN </h3> <address>
+
+ <ul>
+    
+  <li>Rr Ilaz Kodra,Prishtin&euml;</li>
+  <li><a href="tel:383-45-123-456">045-123-456</a></li>
+  <li><a href="mailto:agnesa.zeqiri@student.uni-pr.edu">agnesa.zeqiri@student.uni-pr.edu</a></li>
+   
+</ul>  
+      </address> </div>
+				<div id="box2">
+					<h2>Blendina Jashanica</h2>
+					<h3>Student-e n&euml; FSHMN </h3> <address>
+
+ <ul>
+    
+  <li>Rr Ilaz Kodra,Prishtin&euml;</li>
+  <li><a href="tel:383-45-654-321">045-654-321</a></li>
+  <li><a href="mailto:blendina.jashanica@student.uni-pr.edu">blendina.jashanica@student.uni-pr.edu</a></li>
+   
+</ul>  
+      </address> </div> <span class="titullibox2" id="lokacioni">
+    Gjeje lokacionin t&euml;nd:
+</span>
+				<button class="kontakt1-form-btn" onclick="GjejLokacionin();">Kliko k&euml;tu p&euml; ta gjetur</button>
+				<script>
+				var x = document.getElementById("lokacioni");
+
+				function GjejLokacionin() {
+					if(navigator.geolocation) {
+						navigator.geolocation.getCurrentPosition(TregoPozicionin);
+					} else {
+						x.innerHTML = "Geolocation nuk perkrahet nga browser-i juaj.";
+					}
+				}
+
+				function TregoPozicionin(position) {
+					x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+				}
+				</script>
+				<div class="harta">
+					<iframe src="https://maps.google.com/maps?q=42.6555,21.1613&hl=sq&z=14&amp;output=embed" width="950" height="450" frameborder="0" style="border-radius: 25px; box-shadow: 15px 15px 10px dimgrey;"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footeri">
+		<div class="row">
+			<p id="text-1">Copyright © 2013 Domain Name - All Rights Reserved</p>
+			<p id="text-2">Template by OS Templates</p>
+		</div>
+	</footer>
+</body>
+
+</html>
