@@ -174,6 +174,7 @@ body {
 .style1{
     font-size: 18px;
     line-height: 22px;
+    color: #666666;
 }
 /* stilizimi i dates*/
 .style2{
@@ -207,7 +208,9 @@ body {
     height: 380px;
     margin: 0 auto;
     width: 280px;
-    background: #333333
+    background: #333333;
+    
+    
 }
 .box2{
     margin: 26px 0 0;
@@ -307,17 +310,20 @@ body {
     display: table-cell; /* Make elements inside the container behave like table cells */
     
 }
-.rrethNesh{
-    background-color: #FFFFFF;
-    padding: 20px 20px;
-    margin: 35px 180px 0 100px;
-    font-size: 20px;
+#permbajtjaRRethNesh{
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
     color: #666666; 
     font-family: 'Verdana',sans-serif;
+    resize: both;
+    overflow: auto;
 }
-/*.permbajtjaRRethNesh{
-    padding: 5px 5px;
-    margin: 10px 10px;
+/*.rrethNesh{
+    background-image:url(img/AboutUs.jpg);
+    height: 300px;
+    padding: 100px;
+    margin: 100px;
 }*/
 .wallphoto{
     display: block;
@@ -338,3 +344,37 @@ body {
     color: orange;
     line-height: 17px;
 }
+.box{
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px 2px grey;
+    border: 10px grey;
+    
+    background-size:cover; 
+    text-align: center;
+
+}
+#box-img{
+    background-image: url(../images/AboutUs.jpg);
+}
+#AboutUsHeader{
+    padding-top: 50px;
+    padding-right: 230px;
+    font-family:auto;
+    font-size: 48px;
+    color: black;
+}
+#AboutUsContent{
+    padding-top: 154px;
+    padding-left: 602px;
+    font-family:auto;
+    color: black;
+    font-size: 18px;
+
+}
+#lista {
+    list-style-type: square;
+    margin-left: 310px;
+  }
