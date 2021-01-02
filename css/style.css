@@ -55,11 +55,12 @@ body {
 }
 .search-bar input{
     padding: 3px 10px;
-    border-color: #2e3f51;
     background-color: #FFFFFF;
     border-radius: 50px;
     color: #666666;
     height: 26px;
+    outline: none;
+    border: none;
 }
 .search-bar img{
     width: 10px;
@@ -272,7 +273,7 @@ body {
 .footeri{
     padding: 1px 0 26px;
     position: relative;
-    background: #232323;
+    background: #2D2928;
 }
 
 .row{

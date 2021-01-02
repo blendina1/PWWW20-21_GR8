@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!--Application Cache- mundesia e perdorimit te ueb faqes edhe kur jemi offline -->
+	<html manifest="offline.appcache">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>SHOWBIZ (GRUPI 8)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	<script type="text/javascript" src="js/javascript.js"></script>
+	<style>
+	* {
+		font-family: Georgia, Myriad-Roman, AdobeInvisFont;
+	}
+	
+	.faktet {
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+	
+	.faktet {
+		width: 100%;
+		min-height: 100%;
+		padding: 15px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.permbajtja-faktet {
+		width: 1163px;
+		background: #2D2928;
+		border-radius: 40px;
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 90px 130px 88px 148px;
+	}
+	
+	.permbajtja-faktet p {
+		font-size: 18px;
+		color: #C4C4C4;
+	}
+	
+	.titulli-ne-fakte {
+		display: block;
+		font-size: 34px;
+		color: #C4C4C4;
+		line-height: 1.2;
+		text-align: center;
+		padding-bottom: 44px;
+	}
+	
+	#box2 {
+		border-style: ridge;
+		border-radius: 25px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		width: 112%;
+		height: 112%;
+		box-shadow: 15px 15px 10px dimgrey;
+		font-size: 20px;
+		color: #C4C4C4;
+		text-shadow: 20px 20px 20px black;
+		padding-bottom: 20px;
+		background-color: transparent;
+		background-image: url("images/money.png");
+		background-repeat: no-repeat;
+		background-attachment: inherit;
+		background-size: auto;
+		background-origin: padding-box;
+		background-position: right bottom;
+	}
+	
+	#box2 img {
+		-webkit-animation: skew 3s infinite linear;
+		-moz-animation: skew 3s infinite linear;
+		animation: skew 3s infinite linear;
+	}
+	
+	@-webkit-keyframes skew {
+		from {
+			-webkit-transform: skewX(0deg);
+		}
+		20% {
+			-webkit-transform: skewX(3deg);
+		}
+		40% {
+			-webkit-transform: skewX(-3deg);
+		}
+		60% {
+			-webkit-transform: skewY(3deg);
+		}
+		80% {
+			-webkit-transform: skewY(-3deg);
+		}
+		to {
+			-webkit-transform: skewY(0);
+		}
+	}
+	
+	@-moz-keyframes skew {
+		from {
+			-webkit-transform: skewX(0deg);
+		}
+		20% {
+			-webkit-transform: skewX(3deg);
+		}
+		40% {
+			-webkit-transform: skewX(-3deg);
+		}
+		60% {
+			-webkit-transform: skewY(3deg);
+		}
+		80% {
+			-webkit-transform: skewY(-3deg);
+		}
+		to {
+			-webkit-transform: skewY(0);
+		}
+	}
+	
+	@-keyframes skew {
+		from {
+			-webkit-transform: skewX(0deg);
+		}
+		20% {
+			-webkit-transform: skewX(3deg);
+		}
+		40% {
+			-webkit-transform: skewX(-3deg);
+		}
+		60% {
+			-webkit-transform: skewY(3deg);
+		}
+		80% {
+			-webkit-transform: skewY(-3deg);
+		}
+		to {
+			-webkit-transform: skewY(0);
+		}
+	}
+	
+	@font-face {
+		font-family: FontiIm;
+		src: url(font/georgia-webfont.woff);
+	}
+	
+	table {
+		padding-left: 25px;
+		width: 60%;
+		text-align: center;
+		border-collapse: separate;
+		border-spacing: 0px 10px;
+	}
+	
+	td {
+		background-color: #C4C4C4;
+		color: #2D2928;
+	}
+        th {
+		background-color: #C4C4C4;
+		color: #2D2928;
+	}
+	
+	caption {
+		font-size: 35px;
+		font-family: FontiIm;
+	}
+	
+	.fakt1 {
+		display: inline;
+		text-align: left;
+		padding: 25px 0;
+		font-family: FontiIm;
+	}
+	
+	.fakt1 img {
+		float: right;
+		transform: rotate(20deg);
+	}
+	
+	.fakt11 {
+		display: inline;
+		text-align: right;
+		padding: 25px 0;
+		transform: scale(1.25, 1.25);
+		padding-top: 100px;
+		font-family: FontiIm;
+	}
+	
+	.fakt11 img {
+		float: left;
+		transform: rotateX(5deg);
+	}
+	
+	.fakt12 {
+		display: inline;
+		text-align: right;
+		padding: 25px 0;
+		padding-top: 100px;
+		font-family: FontiIm;
+		word-wrap: break-word;
+	}
+	
+	.fakt12 img {
+		float: left;
+		transform: rotateX(20deg);
+	}
+	
+	.fakt2 {
+		display: inline;
+		transform: translate(15%, 100px);
+		padding-top: 25px;
+		font-family: FontiIm;
+                text-align:left;
+	}
+	
+	.fakt2 img {
+		float: right;
+	}
+	
+	mark {
+		background-color: #C4C4C4;
+		color: #2D2928;
+	}
+	
+	abbr {
+		text-decoration: none;
+	}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="navbar">
+			<div class="nav"> <a href="#menyjakryesore">Menyja kryesore</a> | <a href="#topstory">Storia Kryesore</a> | <a href="#postetjera">Storiet</a> | <a href="#fundifaqes">Fundi i Faqes</a> </div>
+			<div class="search-bar">
+				<form method="GET" action=""> <img src="images/search.png" alt="logoja e search-it">
+					<input type="text" name="search"> </form>
+			</div>
+		</div>
+	</header>
+	<div class="columnist">
+		<h1><span class="letterC">S</span>HOWBIZ</h1>
+		<p>T&#235; gjitha lajmet rreth showbiz-it vet&#235;m tek ne!</p> <img src="images/banerilogo.png" width="468" height="60" alt="LOGO 468 x 60px" /> </div>
+	<hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+	<div class="menyja" id="menyjakryesore">
+		<p> <a href="projekt.html"> BALLINA </a> | <a href="DergoLajm.html"> DERGO LAJM </a> | <a href="kontakt.html"> NA KONTAKTO </a> | <a href="AboutUs.html"> RRETH NESH </a> | <a href="Reklamoni.html">REKLAMONI ME NE</a> | <a href="fakte.html"> FAKTE </a> | <a href="tjera.html"> TJERA </a> | <a onclick="ThemeZeze();" href="#"> ERR&Euml;T </a> | <a onclick="ThemeNormale();" href="#">NORMAL</a> </p>
+	</div>
+	<section>
+		<hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+		<div class="faktet">
+			<div class="permbajtja-faktet" style="width:100%;text-align:center;"> <span class="titulli-ne-fakte">
+    <strong>Besoni apo jo,k&euml;ta jan&euml; 10 aktoret m&euml; t&euml; pasur n&euml; bot&euml;!</strong>
+</span>
+				<div id="box2">
+					<table>
+                                             
+						<caption><abbr title="Bazuar ne pasurine te deklaruar nga ta">Tabela e 10 aktor&euml;ve m&euml; t&euml; pasur</abbr>:</caption>
+						<tr>
+							<th colspan="2">Emri dhe mbiemri</th>
+							<th>Pasuria</th>
+                                                </tr>
+                                               
+								<tr>
+                                                                    <td>1.Oprah Winfrey</td>
+									<td><img src="images/oprah2.jpg" alt="oprah2" width="100" height="80"></td>
+									<td>$3,500,000,000</td>
+								</tr>
+								<tr>
+									<td>2.Jamie Gertz</td>
+									<td><img src="images/Jami-Gertz.jpg" alt="Jami" width="100" height="80"></td>
+									<td>$3,500,000,000</td>
+								</tr>
+                                                                <tr>
+								<td>3.Jacqueline Gold</td>
+								<td><img src="images/jacqueline.jpg" alt="jacqueline" width="100" height="80"></td>
+								<td>$860,000,000</td>
+                                                                </tr>
+		
+						<tr>
+							<td>4.Shahrukh Khan</td>
+							<td><img src="images/shahrukh.jpg" alt="shahrukh" width="100" height="80"></td>
+							<td>$600,000,000</td>
+						</tr>
+						<tr>
+							<td>5.Simon Cowell</td>
+							<td><img src="images/Simon-Cowell.jpg" alt="Simon" width="100" height="80"></td>
+							<td>$600,000,000</td>
+						</tr>
+							<tr>
+								<td>6.Tom Cruise</td>
+								<td><img src="images/tc.jpg" width="100" height="80"></td>
+								<td>$600,000,000</td>
+							</tr>
+							<tr>
+								<td>7.George Clooney</td>
+								<td><img src="images/George-Clooney.jpg" width="100" height="80"></td>
+								<td>$500,000,000</td>
+							</tr>
+							<tr>
+								<td>8.Robert De Niro</td>
+								<td><img src="images/Robert-De-Niro.jpg" width="100" height="80"></td>
+								<td>$500,000,000</td>
+							</tr>
+							<tr>
+								<td>9.The Olsen Twins</td>
+								<td><img src="images/twins.jpg" width="100" height="80"></td>
+								<td>$500,000,000</td>
+							</tr>
+							<tr>
+								<td>10.Dr Phil</td>
+								<td><img src="images/dr phil.jpg" width="100" height="80"></td>
+								<td>$460,000,000</td>
+							</tr>
+					</table>
+				</div> <span class="titulli-ne-fakte">
+    <strong>N&euml; vazhdim kemi disa fakte t&euml; tjera interesante p&euml;r personazhe t&euml; ndryshme.</strong>
+</span>
+				<div class="fakt1" style="width: 100%;"> <img src="images/bill-murray2.png" alt="fotoja png e Bill-it"> <span class="titulli-ne-fakte" style="padding-top:60px; font-size:20px; text-align:left;">
+    <strong>Bill Murray nuk ka nj&euml; <mark>agjent</mark>. Ju mund t'i lini atij nj&euml; mesazh t&euml; post&euml;s zanore, duke shpresuar se ai do ta p&euml;lqej&euml; projektin dhe do t'ju kthehet.</strong>
+</span>
+					<p>Disa thon&euml;, Bill Murray humbi role t&euml; shk&euml;lqyera p&euml;r shkak t&euml; munges&euml;s s&euml; nj&euml; agjenti, por &euml;sht&euml; vog&euml;lsira si kjo q&euml; e b&euml;n Murray t&euml; q&euml;ndroj&euml; nj&euml;qind milje p&euml;rpara aktor&euml;ve t&euml; tjer&euml; n&euml; kampionatin e tij. Jo, nuk do ta gjeni k&euml;t&euml; num&euml;r n&euml; Internet. Ne u p&euml;rpoq&euml;m. </p>
+				</div>
+				<div class="fakt11" style="width: 100%;"> <img src="images/jim-carrey.png" alt="fotoja png e Jim-it"> <span class="titulli-ne-fakte" style="padding-top:60px; font-size:20px; text-align:right;">
+    <strong>Jim Carrey ishte zgjedhja e par&euml; e Disney p&euml;r t&euml; luajtur kapitenin <mark>Jack Sparrow</mark>.</strong>
+</span>
+					<p>Zgjedhja e par&euml; e regjisorit Gore Verbinksi p&euml;r t&euml; luajtur nj&euml; pirat legjendar ishte Jim Carrey. Fatkeq&euml;sisht p&euml;r Carrey, orari i prodhimit t&euml; The Curse of The Black Pearl bashk&euml;-p&euml;rfshiu me xhirimet e Bruce Almighty. </p>
+				</div>
+				<div class="fakt12" style="width: 100%;"> <img src="images/matthew.png" alt="fotoja png e Matthew-it"> <span class="titulli-ne-fakte" style="padding-top:60px; font-size:20px;">
+    <strong>Matthew McConaughey pretendon se ai nuk ka p&euml;rdorur <mark>deodorant</mark> p&euml;r 20 vjet.</strong>
+                                     </span>
+					<p> Ky lajm s&euml; pari doli n&euml; drit&euml; kur Matthew McConaughey po q&euml;llonte p&euml;r Fool's Gold me Kate Hudson e cila iu lut McConaughey t&euml; p&euml;rdorte nj&euml; deodorant gjat&euml; xhirimit, ku ai ishte pa k&euml;mish&euml; p&euml;r pjes&euml;n m&euml; t&euml; madhe. Si adhuruesit e tij, ne vendosim t&euml; p&euml;rqafojm&euml; mohimin me k&euml;t&euml; informacion t&euml; qelbur. </p>
+				</div>
+				<div class="fakt2" style="width: 100%;"> <img src="images/sean2.png" width="400" height="400" alt="fotoja png e Sean-it"> <span class="titulli-ne-fakte" style="padding-top:60px; font-size:20px;">
+    <strong>Nj&euml; burr&euml; drejtoi nj&euml; arm&euml; drejt <abbr title="Aktor,lindur me 1920,vdiq ne vitin 2020">Sean Connery</abbr> n&euml; nj&euml; set filmik, por u &ccedil;armatos me shpejt&euml;si dhe u hodh n&euml; tok&euml; nga Connery.</strong>
+</span>
+					<p>Aktorja Lana Turner e cila po q&euml;llonte me Sean Connery kur i dashuri i saj Johnny Stompanato hyri n&euml; skenat e filmit p&euml;r t&euml; k&euml;rc&euml;nuar Sean Connery me arm&euml;.Aktori i p&euml;rkuli krahun Stompanato duke e b&euml;r&euml; at&euml; t&euml; hidhte arm&euml;n.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footeri">
+		<div class="row">
+			<p id="text-1">Copyright © 2013 Domain Name - All Rights Reserved</p>
+			<p id="text-2">Template by OS Templates</p>
+		</div>
+	</footer>
+</body>
+
+</html>

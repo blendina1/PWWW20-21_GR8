@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!--Application Cache- mundesia e perdorimit te ueb faqes edhe kur jemi offline -->
+	<html manifest="offline.appcache">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>SHOWBIZ (GRUPI 8)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	<script type="text/javascript" src="js/javascript.js"></script>
+	<script>
+	function sesionidhelocal() {
+		if(sessionStorage) {
+			var testi3 = document.getElementById("testi4").value;
+			var testi4 = document.getElementById("testi3").value;
+			sessionStorage.setItem('Pas zevendsimit', testi3);
+			sessionStorage.setItem('Para zevendsimit', testi4);
+		} else {
+			alert("Na falni,browser-i juaj nuk e perkrah Session Storage");
+		}
+		if(localStorage) {
+			var testi3 = document.getElementById("testi4").value;
+			var testi4 = document.getElementById("testi3").value;
+			localStorage.setItem('Pas zevendsimit', testi3);
+			localStorage.setItem('Para zevendsimit', testi4);
+		} else {
+			alert("Na falni,browser-i juaj nuk e perkrah Local Storage");
+		}
+	}
+	</script>
+	<style>
+	@font-face {
+		font-family: FontiIm;
+		src: url(font/georgia-webfont.woff);
+	}
+	
+	* {
+		font-family: FontiIm;
+	}
+	
+	.kontakt1 {
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+	
+	.kontakt1 p {
+		font-size: 14px;
+		line-height: 1.7;
+		color: #666666;
+		margin: 0px;
+	}
+	
+	input {
+		outline: none;
+		border: none;
+	}
+	
+	textarea {
+		outline: none;
+		border: none;
+	}
+	
+	input:focus {
+		border-color: transparent !important;
+	}
+	
+	.kontakt1 button {
+		outline: none !important;
+		border: none;
+	}
+	
+	.kontakt1 {
+		width: 100%;
+		min-height: 100%;
+		padding: 15px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.kontakt1-permbajtja {
+		width: 1163px;
+		background: #2D2928;
+		border-radius: 40px;
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 90px 130px 88px 148px;
+	}
+	
+	.kontakt1-permbajtja p {
+		font-size: 18px;
+		color: #C4C4C4;
+	}
+	
+	.kontakt1-form {
+		width: 390px;
+	}
+	
+	input.input1 {
+		height: 50px;
+		border-radius: 25px;
+		padding: 0 30px;
+	}
+	
+	input.input1+.shadow-input1 {
+		border-radius: 25px;
+	}
+	
+	.wrap-input1 {
+		position: relative;
+		width: 100%;
+		z-index: 1;
+		margin-bottom: 20px;
+	}
+	
+	.input1 {
+		display: block;
+		width: 100%;
+		background: #e6e6e6;
+		font-size: 15px;
+		line-height: 1.5;
+		color: #666666;
+	}
+	
+	.kontakt1-permbajtja-form-btn {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.kontakt1-form-btn {
+		min-width: 193px;
+		height: 50px;
+		border-radius: 25px;
+		background: #57b846;
+		font-size: 15px;
+		line-height: 1.5;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 25px;
+	}
+	
+	.kontakt1-form-btn:hover {
+		background: black;
+		color: #57b846;
+	}
+	
+	#gradient1 {
+		background-image: linear-gradient(180deg, #2D2928, #C4C4C4);
+		border-radius: 40px;
+	}
+	
+	#gradient2 {
+		background-image: linear-gradient(to right, #2D2928, #433F3E, #585555, #6E6B6B, #838281, #999897, #AEAEAE, #C4C4C4);
+		border-radius: 40px;
+	}
+	
+	#radialgradient {
+		background-image: radial-gradient(#C4C4C4, #838281, #2D2928);
+		/*brenda,ne mes,jasht*/
+		border-radius: 40px;
+	}
+	
+	#multiplebackgrounds {
+		background-image: url('images/labi.jpg'), url('images/LeonoraJakupi.jpeg');
+		background-position: right, left;
+		background-repeat: no-repeat, no-repeat;
+		border-radius: 40px;
+	}
+	
+	#changebackgroundcolor {
+		border-radius: 40px;
+		background-color: #2D2928;
+		animation-name: nderrongjyren;
+		animation-duration: 10s;
+	}
+	
+	@keyframes nderrongjyren {
+		from {
+			background-color: #C4C4C4;
+		}
+		to {
+			background-color: #2D2928;
+		}
+	}
+	
+	#outline-resize {
+		resize: both;
+		overflow: auto;
+		outline-offset: 4px;
+		outline: #C4C4C4 solid 5px;
+		background-image: url('images/loredana.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	
+	.butoniloj {
+		background-color: #e7e7e7;
+		border: none;
+		color: #2D2928;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="navbar">
+			<div class="nav"> <a href="#menyjakryesore">Menyja kryesore</a> | <a href="#topstory">Storia Kryesore</a> | <a href="#postetjera">Storiet</a> | <a href="#fundifaqes">Fundi i Faqes</a> </div>
+			<div class="search-bar">
+				<form method="GET" action=""> <img src="images/search.png" alt="logoja e search-it">
+					<input type="text" name="search"> </form>
+			</div>
+		</div>
+	</header>
+	<div class="columnist">
+		<h1><span class="letterC">S</span>HOWBIZ</h1>
+		<p>T&#235; gjitha lajmet rreth showbiz-it vet&#235;m tek ne!</p> <img src="images/banerilogo.png" width="468" height="60" alt="LOGO 468 x 60px" /> </div>
+	<hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+	<div class="menyja" id="menyjakryesore">
+		<p> <a href="projekt.html"> BALLINA </a> | <a href="DergoLajm.html"> DERGO LAJM </a> | <a href="kontakt.html"> NA KONTAKTO </a> | <a href="AboutUs.html"> RRETH NESH </a> | <a href="Reklamoni.html">REKLAMONI ME NE</a> | <a href="fakte.html"> FAKTE </a> | <a href="tjera.html"> TJERA </a> | <a onclick="ThemeZeze();" href="#"> ERR&Euml;T </a> | <a onclick="ThemeNormale();" href="#">NORMAL</a> </p>
+	</div>
+	<section>
+		<hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+		<div class="kontakt1">
+			<div class="kontakt1-permbajtja">
+				<div>
+					<p id="tekstipermatch"> Robert Berisha e pyet tro&ccedil; Nora Istrefin: A je pishman q&euml; jemi ndar&euml;? </br>
+						</br> P&euml;r te festuar ardhjen e Vitit t&euml; Ri, 2021, Robert dhe Pastris Berisha ishin t&euml; ftuar mbr&euml;mjen e djeshme n&euml; emisionin &ldquo;Soiree&rdquo;. Gjat&euml; intervist&euml;s n&euml; studio, ata jan&euml; vendosur p&euml;rball&euml; shum&euml; situatave t&euml; ndryshme. Nj&euml; nd&euml;r to ishte q&euml; k&euml;ng&euml;tari i njohur u kthye n&euml; nj&euml; moment n&euml; rolin e intervistuesit dhe p&euml;rball&euml; kishte ish-bashk&euml;shorten, Nora Istrefi. </p>
+				</div>
+				<input class="input1" id="testi2" type="text" style="width: 30%; margin: 40px 0 40px 0" placeholder="K&euml;rko per fjal&euml; te p&euml;rdorura n&euml; tekst.">
+				<p id="shtype"></p>
+				<button class="kontakt1-form-btn" style="width: 30%; margin: 40px 0 40px 0" onclick="KerkoFjal()">K&euml;rko p&euml;r fjal&euml;</button>
+				<input class="input1" id="testi3" type="text" style="width: 30%; margin: 40px 0 40px 0" placeholder="Z&euml;vend&euml;so k&euml;t&euml; fjal&euml;:">
+				<input class="input1" id="testi4" type="text" style="width: 30%; margin: 40px 0 40px 0" placeholder="me k&euml;t&euml; fjal&euml;:">
+				<button class="kontakt1-form-btn" style="width: 30%; margin: 40px 0 40px 0; margin-left: 320px;" onclick="ZevendesoFjal()">Z&euml;vend&euml;so fjal&euml;t</button>
+				<p id="shtype1"></p>
+				<p id="shtype2"></p>
+				<script>
+				function KerkoFjal() {
+					var str = document.getElementById("tekstipermatch").innerHTML;
+					x = document.getElementById("testi2").value;
+					var res = str.match(x);
+					if(res !== null) {
+						document.getElementById("shtype").innerHTML = "Fjala e kerkuar '" + res + "' egziston";
+					} else {
+						document.getElementById("shtype").innerHTML = "Fjala e kerkuar '" + x + "' nuk egziston";
+					}
+				}
+
+				function ZevendesoFjal() {
+					var str = document.getElementById("tekstipermatch").innerHTML;
+					x = document.getElementById("testi3").value;
+					y = document.getElementById("testi4").value;
+					var res = str.replace(x, y);
+					console.log(x);
+					console.log(y);
+					document.getElementById("shtype1").innerHTML = res;
+					sesionidhelocal();
+				}
+				</script>
+				<div id="gradient1" style="width:100%; text-align:center; padding-bottom:10px; margin-bottom:40px;">
+					<p style="font-size:28px;">Noizy e thumboi keq, Tayna i p&euml;rgjigjet dhe habiti t&euml; gjith&euml;</br>
+						</br>
+						</br>
+					</p>
+					<p style="color: #2D2928;"> K&euml;nga e re e Tayn&euml;s &ldquo;Johnny&rdquo; pati shum&euml; sukses, por edhe u komentua shum&euml; pas nj&euml; thumbi q&euml; Noizy i hodhi publikisht. Reperi publikoi pak dit&euml; m&euml; par&euml; nj&euml; pjes&euml; nga k&euml;nga e tij &ldquo;Naughty naughty&rdquo;, ku shprehet &ldquo;She come for Johnny, she got the Johnny&rdquo;, e menj&euml;her&euml; u tha se Noizy e kishte p&euml;r Tayn&euml;n. </p>
+				</div>
+				<div id="gradient2" style="width:100%; text-align:center; padding-bottom:10px; margin-bottom:40px;">
+					<p style="font-size:28px;color: white; text-shadow: 2px 2px 2px black;">A &euml;sht&euml; e dashuruar? Luana Vjollca zbulon t&euml; v&euml;rtet&euml;n</br>
+						</br>
+						</br>
+					</p>
+					<p style="color: white; text-shadow: 2px 2px 2px black; "> Moderatorja dhe autorja e emisionit &ldquo;Shiko Kush Luan&rdquo;, Luana Vjollca, kishte rezervuar nj&euml; super spektak&euml;l me rastin e Vitit t&euml; Ri. Nj&euml; nga surprizat e 1 janarit ishte p&euml;rballja e vet&euml; moderatores me showgirl-in Luana Vjollca. Nuk e kishim menduar se Luana Vjollca do t&euml; intervistohej nga vet&euml; vetja e saj n&euml; &ldquo;Shiko Kush LUAN&rdquo;, por ja q&euml; kjo gj&euml; sapo ndodhi. </p>
+				</div>
+				<div id="radialgradient" style="width:100%; text-align:center; padding-bottom:10px; margin-bottom:40px; ">
+					<p style="font-size:28px;color: white; text-shadow: 2px 2px 2px black;">Tea n&euml; &ldquo;P&euml;rputhen&rdquo; paraqitet me nj&euml; stil t&euml; ve&ccedil;ant&euml; e unik</br>
+						</br>
+						</br>
+					</p>
+					<p style="color: white; text-shadow: 2px 2px 2px black; padding-bottom:10px; margin-bottom:40px;"> Tea Trifoni, u b&euml; e njohur nga programi &ldquo;P&euml;rputhen&rdquo; i cili ka tre muaj q&euml; po transmetohet. Ajo b&euml;ri fam&euml; t&euml; madhe me an&euml; t&euml; &euml;mb&euml;lsis&euml; s&euml; saj dhe men&ccedil;uris&euml;. Ajo p&euml;r nj&euml; koh&euml; t&euml; shkurt&euml; b&euml;ri p&euml;r vete shum&euml; adhurues dhe po ashtu pati nj&euml; ndryshim t&euml; madhe edhe n&euml; pesh&euml;. Ajo &ccedil;ka bie n&euml; sy &euml;sht&euml; se ajo gjithmon&euml; ka pasur nj&euml; stil t&euml; ve&ccedil;ant&euml;. S&euml; fundmi ka postuar nj&euml; foto ku shihet e veshur me komplete serioze. </p>
+				</div>
+				<div id="multiplebackgrounds" style="width:100%; text-align:center; padding-bottom:10px; margin-bottom:40px; ">
+					<p style="font-size:28px;color: white;margin-bottom:40px;  text-shadow: 2px 2px 2px black;">Sa para i k&euml;rkon Labi p&euml;r dasm&euml; Leonora Jakupit?</br>
+						</br>
+						</br>
+					</p>
+					<p style="color: white; text-shadow: 2px 0px 10px black; "> K&euml;ng&euml;tarja Leonora Jakupi ka folur s&euml; fundi rreth jet&euml;s s&euml; saj private. Ajo ka treguar se &euml;sht&euml; n&euml; lidhje qe n&euml;nt&euml; vite, shkruan Express. E kur u pyet rreth planeve q&euml; ka p&euml;r k&euml;t&euml; vit, Leonora u shpreh se ka d&euml;shir&euml; q&euml; k&euml;t&euml; vit t&euml; krijoj&euml; familjen e saj. &ldquo;Kisha pas qef q&euml; n&euml; vitin 2021 me kriju familjen time&rdquo;, tha Leonora. Pas k&euml;saj deklarate, Labinot Tahiri e pyeti n&euml;se do ta ftonte n&euml; dasm&euml;. Kur Leonora i tha n&euml;se do t&euml; vinte p&euml;r t&euml; k&euml;nduar, Labi iu p&euml;rgjigj me shaka se duhet t&euml; paguaj&euml; 10 mij&euml; euro. </p>
+				</div>
+				<div id="changebackgroundcolor" style="width:100%; text-align:center; padding-bottom:10px; margin-bottom:40px; ">
+					<p style="font-size:28px;color: white;margin-bottom:40px;  text-shadow: 2px 2px 2px black;">Anita sjell fotografi t&euml; tjera nga festa e Vitit t&euml; Ri bashk&euml; me Ramushin</br>
+						</br>
+						</br>
+					</p>
+					<p style="color: white; text-shadow: 2px 0px 10px black; "> Anita publikoi imazhe t&euml; reja nga festa n&euml; familjen e saj. Anita Haradinaj ka publikuar disa fotografi t&euml; reja, p&euml;rmes s&euml; cilave tregon se si po kalonin fest&euml;n,. N&euml; nj&euml; prej fotografive, ajo u shfaq pran&euml; Ramushit, i cili po i dhuronte asaj nj&euml; puthje n&euml; faqe, teksa dukeshin t&euml; lumtur. &ldquo;Une me loqken&rdquo;, &euml;sht&euml; mbishkrimi q&euml; ia la fotografis&euml;.</p>
+				</div>
+				<div id="outline-resize" style="width:100%; text-align:center; padding-bottom:10px; margin-bottom:40px; ">
+					<p style="font-size:28px;color: white;margin-bottom:40px;  text-shadow: 2px 2px 2px black;">Ndryshimi drastik i Loredan&euml;s, mezi njihet</br>
+						</br>
+						</br>
+					</p>
+					<p style="color: white; text-shadow: 2px 0px 10px black; "> Loredana Zefi vazhdon t&euml; jet&euml; em&euml;r shum&euml; i suksessh&euml;m n&euml; aren&euml;n nd&euml;rkomb&euml;tare. Rep-artistja me an&euml; t&euml; postimi n&euml; Instagram ka b&euml;r&euml; t&euml; ditur ndryshimin drastik n&euml; dukje, duke u shnd&euml;rruar n&euml; brune. Ajo prej koh&euml;sh mbajti flok&euml;t e bardha, nd&euml;rsa tani i ngjyrosi flok&euml;t me ngjyr&euml; t&euml; zez&euml;. Ky ndryshim po i shkonte shum&euml; asaj, nd&euml;rsa p&euml;r fansat e saj ishte befasi ndryshimi i madh i saj. Kujtojm&euml; se Loredana p&euml;rmbyll nj&euml; vit me shum&euml; k&euml;ng&euml; t&euml; reja dhe hapjen e nj&euml; biznesi t&euml; ri. </p>
+				</div>
+				<hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; margin: 40px 0">
+				<script>
+				console.warn("Perdorimi i JS per paraqitjen e verejtjeve!");
+				</script>
+				<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+					<input class="input1" type="range" id="a" value="100">
+					<p>+</p>
+					<input class="input1" type="number" id="b" value="20">
+					<p>=</p>
+					<output class="kontakt1-form-btn" style="color:black; background-color:white;" name="x" for="a b"></output>
+				</form>
+				<div class="numri5-10" style="width:40%; display: block; margin-left: auto; margin-right: auto; text-align:center;">
+					<p>Ju lutem shkruani nje numer prej 10 deri 100:</p>
+					<input class="input1" id="testi" type="text">
+					<button class="kontakt1-form-btn" type="button" style="margin-top: 30px; margin-left:90px;" onclick="FunksioniIm()">Testo input-in</button>
+					<p id="numritest"></p>
+					<script>
+					function FunksioniIm() {
+						var mesazhi, x;
+						mesazhi = document.getElementById("numritest");
+						mesazhi.innerHTML = "";
+						x = document.getElementById("testi").value;
+						try {
+							if(x == "") throw "eshte i zbrazet.";
+							if(isNaN(x)) throw "nuk eshte numer.";
+							x = Number(x);
+							if(x < 10) {
+								throw "eshte numer me i vogel.";
+							} else if(x > 100) {
+								throw "eshte numer me i madh.";
+							}
+							while(x => 10 && x <= 100) {
+								throw x + " eshte i sakt. MAX_VALUE per " + x + " eshte " + x.MAX_VALUE + ".Notacioni eksponencial i numrit " + x + " eshte " + x.toExponential() + ".Numri i kthyer ne String:" + x.toString();
+							}
+						} catch(err) {
+							mesazhi.innerHTML = "Inputi " + err;
+						}
+					}
+					</script>
+				</div>
+				<div class="Prototype" style="display:flex; margin-top:100px;">
+					<div id="myfilter" style="position:absolute;background-color:#000000;opacity:0.3;width:322px;height:182px;display:none"></div>
+					<div id="myrestartbutton" style="position:absolute;padding-top:75px;padding-left:120px;display:none;">
+						<button class="butoniloj" onclick="restartGame()">Ristarto lojen</button>
+					</div>
+					<div id="canvascontainer"></div>
+					<br>
+					<div style="text-align:center;width:900px;">
+						<button class="butoniloj" onmousedown="moveup()" onmouseup="clearmove()">LART</button>
+						<br>
+						<br>
+						<button class="butoniloj" onmousedown="moveleft()" onmouseup="clearmove()">MAJTAS</button>
+						<button class="butoniloj" onmousedown="moveright()" onmouseup="clearmove()">DJATHTAS</button>
+						<br>
+						<br>
+						<button class="butoniloj" onmousedown="movedown()" onmouseup="clearmove()">POSHTE</button>
+					</div>
+					<script>
+					var myGameArea;
+					var myGamePiece;
+					var myObstacles = [];
+					var myscore;
+
+					function restartGame() {
+						document.getElementById("myfilter").style.display = "none";
+						document.getElementById("myrestartbutton").style.display = "none";
+						myGameArea.stop();
+						myGameArea.clear();
+						myGameArea = {};
+						myGamePiece = {};
+						myObstacles = [];
+						myscore = {};
+						document.getElementById("canvascontainer").innerHTML = "";
+						startGame()
+					}
+
+					function startGame() {
+						myGameArea = new gamearea();
+						myGamePiece = new component(30, 30, "red", 10, 75);
+						myscore = new component("15px", "Consolas", "black", 220, 25, "text");
+						myGameArea.start();
+					}
+
+					function gamearea() {
+						this.canvas = document.createElement("canvas");
+						this.canvas.width = 320;
+						this.canvas.height = 180;
+						document.getElementById("canvascontainer").appendChild(this.canvas);
+						this.context = this.canvas.getContext("2d");
+						this.pause = false;
+						this.frameNo = 0;
+						this.start = function() {
+							this.interval = setInterval(updateGameArea, 20);
+						}
+						this.stop = function() {
+							clearInterval(this.interval);
+							this.pause = true;
+						}
+						this.clear = function() {
+							this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+						}
+					}
+
+					function component(width, height, color, x, y, type) {
+						this.type = type;
+						if(type == "text") {
+							this.text = color;
+						}
+						this.score = 0;
+						this.width = width;
+						this.height = height;
+						this.speedX = 0;
+						this.speedY = 0;
+						this.x = x;
+						this.y = y;
+						this.update = function() {
+							ctx = myGameArea.context;
+							if(this.type == "text") {
+								ctx.font = this.width + " " + this.height;
+								ctx.fillStyle = color;
+								ctx.fillText(this.text, this.x, this.y);
+							} else {
+								ctx.fillStyle = color;
+								ctx.fillRect(this.x, this.y, this.width, this.height);
+							}
+						}
+						this.crashWith = function(otherobj) {
+							var myleft = this.x;
+							var myright = this.x + (this.width);
+							var mytop = this.y;
+							var mybottom = this.y + (this.height);
+							var otherleft = otherobj.x;
+							var otherright = otherobj.x + (otherobj.width);
+							var othertop = otherobj.y;
+							var otherbottom = otherobj.y + (otherobj.height);
+							var crash = true;
+							if((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+								crash = false;
+							}
+							return crash;
+						}
+					}
+
+					function updateGameArea() {
+						var x, y, min, max, height, gap;
+						for(i = 0; i < myObstacles.length; i += 1) {
+							if(myGamePiece.crashWith(myObstacles[i])) {
+								myGameArea.stop();
+								document.getElementById("myfilter").style.display = "block";
+								document.getElementById("myrestartbutton").style.display = "block";
+								return;
+							}
+						}
+						if(myGameArea.pause == false) {
+							myGameArea.clear();
+							myGameArea.frameNo += 1;
+							myscore.score += 1;
+							if(myGameArea.frameNo == 1 || everyinterval(150)) {
+								x = myGameArea.canvas.width;
+								y = myGameArea.canvas.height - 100;
+								min = 20;
+								max = 100;
+								height = Math.floor(Math.random() * (max - min + 1) + min);
+								min = 50;
+								max = 100;
+								gap = Math.floor(Math.random() * (max - min + 1) + min);
+								myObstacles.push(new component(10, height, "green", x, 0));
+								myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+							}
+							for(i = 0; i < myObstacles.length; i += 1) {
+								myObstacles[i].x += -1;
+								myObstacles[i].update();
+							}
+							myscore.text = "SCORE: " + myscore.score;
+							myscore.update();
+							myGamePiece.x += myGamePiece.speedX;
+							myGamePiece.y += myGamePiece.speedY;
+							myGamePiece.update();
+						}
+					}
+
+					function everyinterval(n) {
+						if((myGameArea.frameNo / n) % 1 == 0) {
+							return true;
+						}
+						return false;
+					}
+
+					function moveup(e) {
+						myGamePiece.speedY = -1;
+					}
+
+					function movedown() {
+						myGamePiece.speedY = 1;
+					}
+
+					function moveleft() {
+						myGamePiece.speedX = -1;
+					}
+
+					function moveright() {
+						myGamePiece.speedX = 1;
+					}
+
+					function clearmove(e) {
+						myGamePiece.speedX = 0;
+						myGamePiece.speedY = 0;
+					}
+					startGame();
+					</script>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footeri">
+		<div class="row">
+			<p id="text-1">Copyright © 2013 Domain Name - All Rights Reserved</p>
+			<p id="text-2">Template by OS Templates</p>
+		</div>
+	</footer>
+</body>
+
+</html>
