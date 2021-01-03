@@ -55,12 +55,11 @@ body {
 }
 .search-bar input{
     padding: 3px 10px;
+    border-color: #2e3f51;
     background-color: #FFFFFF;
     border-radius: 50px;
     color: #666666;
     height: 26px;
-    outline: none;
-    border: none;
 }
 .search-bar img{
     width: 10px;
@@ -171,6 +170,10 @@ body {
     position: relative;
     width:300px;
 }
+.box1 a:hover{
+    background-color:#8d8a8a;
+    border-color:black;
+  }
 /* stilizimi i tekstit*/
 .style1{
     font-size: 18px;
@@ -218,6 +221,10 @@ body {
     position: relative;
     
 }
+.box2 a:hover{
+    background-color:#8d8a8a;
+    border-color:black;
+  }
 .story2{
     height: 340px;
     margin: 0 auto;
@@ -228,7 +235,10 @@ body {
     position: relative;
     width: 300px;
 }
-
+.box3 a:hover{
+    background-color:#8d8a8a;
+    border-color:black;
+  }
 
 .story3{
     height: 320px;
@@ -239,8 +249,11 @@ body {
 .box4{
     margin: 26px 0 0;
     position: relative;
-
 }
+.box4 a:hover{
+    background-color:#8d8a8a;
+    border-color:black;
+  }
 .story4{
     height: 380px;
     margin: 0 auto;
@@ -252,6 +265,10 @@ body {
     position: relative;
     width: 300px;
 }
+.box5 a:hover{
+    background-color:#8d8a8a;
+    border-color:black;
+  }
 
 .story5{
     height: 220px;
@@ -263,6 +280,10 @@ body {
     margin: 26px 0 0;
     position: relative;
 }
+.box6 a:hover{
+    background-color:#8d8a8a;
+    border-color:black;
+  }
 
 .story6{
     height:530px;
@@ -273,7 +294,7 @@ body {
 .footeri{
     padding: 1px 0 26px;
     position: relative;
-    background: #2D2928;
+    background: #232323;
 }
 
 .row{
@@ -314,18 +335,15 @@ body {
 #permbajtjaRRethNesh{
     padding: 10px;
     margin: 10px;
+    margin-left: 290px;
+    margin-right: 290px;
     font-size: 18px;
     color: #666666; 
     font-family: 'Verdana',sans-serif;
     resize: both;
     overflow: auto;
+    text-align: justify;
 }
-/*.rrethNesh{
-    background-image:url(img/AboutUs.jpg);
-    height: 300px;
-    padding: 100px;
-    margin: 100px;
-}*/
 .wallphoto{
     display: block;
     margin-left: auto;
@@ -334,11 +352,14 @@ body {
 }
 #reklamoni{
     font-size:16px;
-    width:488px;
+    width:400px;
     height:200px;
-    margin:-20px 25px 80px 400px;
+    margin:-20px 25px 80px 425px;
     color:#666666;
-    background-color: #b9b8b85e;
+    background-color: #a09f9f5e;
+    text-align: justify;
+    box-shadow: 0px 0px 10px 2px rgb(253, 196, 90);
+    padding: 20px;
 }
 #ShowbizStyle{
     text-decoration: none;
@@ -379,3 +400,42 @@ body {
     list-style-type: square;
     margin-left: 310px;
   }
+  .boxx{
+      width: 600px;
+      height: 900px;
+      padding: 20px;
+      margin: 80px auto;
+      box-shadow: 0px 0px 10px 2px grey;
+      border: 10px grey;
+      text-align: center;
+      font-size: 16px;
+      font-family:Verdana,Myriad-Roman,AdobeInvisFont;
+      color: #747474;
+
+  }
+  #daysavailable{
+    font-size: 16px;
+    font-family:Verdana,Myriad-Roman,AdobeInvisFont;
+    color: #747474;
+  }
+  #kontaktimi{
+    font-size: 16px;
+    font-family:Verdana,Myriad-Roman,AdobeInvisFont;
+    color: #747474;
+  }
+  #button{
+    font-size: 16px;
+    font-family:Verdana,Myriad-Roman,AdobeInvisFont;
+    color: #747474;
+  }
+ 
+  #button2{
+    font-size: 16px;
+    font-family:Verdana,Myriad-Roman,AdobeInvisFont;
+    color: #747474;
+  }
+  .menyja a:hover{
+      background-color: orange;
+      border-color: black;
+  }
+  
