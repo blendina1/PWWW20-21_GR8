@@ -20,7 +20,7 @@ function NdryshoBackground() {
 		document.write("<style>html {background-color:#121212;}\n\ ");
 		document.write(".columnist h1{background-color: #121212;}</style> ");
 	}
-	if(0 <= kohaTani && kohaTani < 12) {
+	if(0 <= kohaTani && kohaTani < 8) {
 		document.write("<style>html {background-color:#121212;}\n\ ");
 		document.write(".columnist h1{background-color: #121212;}</style> ");
 	}

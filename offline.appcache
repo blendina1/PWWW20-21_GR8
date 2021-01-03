@@ -1,6 +1,20 @@
 CACHE MANIFEST
-# 2020-12-26 v1.0.0
-/css/style.css
+# 2021-01-03:v3
+
+# Explicitly cached entries
+projekt.html
+css/style.css
+
+# projekt.html will be displayed if the user is offline
+FALLBACK:
+/ /projekt.html
+
+# All other resources (e.g. sites) require the user to be online. 
+NETWORK:
+*
+
+# Additional resources to cache
+CACHE:
 /images/search.png
 /images/banerilogo.jpg
 /images/bradpitt.jpg
@@ -10,10 +24,3 @@ CACHE MANIFEST
 /images/jennifer.jpg
 /images/kim.jpg
 /images/rihanna.jpg
-/main.js
-
-NETWORK:
-login.asp
-
-FALLBACK:
-/html/ /projekt.html
