@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <!--Application Cache- mundesia e perdorimit te ueb faqes edhe kur jemi offline -->
+        <html manifest="offline.appcache">
+        <title>SHOWBIZ (GRUPI 8)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="css/reset.css" />
+          <link rel="stylesheet" href="css/style.css" />
+          <link rel="shortcut icon"  type="image/x-icon" href="images/favicon.ico" />
+          <script type="text/javascript" src="js/javascript.js"></script>
+          <style>
+              input[type="text"], textarea {
+
+                background-color : #d4eeff; }
+          </style>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                 <div class="nav">
+                     <a href="#menyjakryesore">Menyja kryesore</a>  | 
+                     <a href="#topstory">Storia Kryesore</a>  |
+                     <a href="#postetjera">Storiet</a> |
+                     <a href="#fundifaqes">Fundi i Faqes</a>  
+                 </div>
+             
+        <div class="search-bar">
+        <form method="GET" action="">
+          <img src="images/search.png" alt="logoja e search-it">
+          <input type="text" name="search">
+        </form>
+      </div>
+        
+       
+             </header>
+            
+        <div class="columnist">
+        <h1><span class="letterC">S</span>HOWBIZ</h1>
+        <p>T&#235; gjitha lajmet rreth showbiz-it vet&#235;m tek ne!</p>       
+        <img src="images/banerilogo.png" width="468" height="60" alt="LOGO 468 x 60px"/>  
+        </div>
+            <hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+            
+            
+            
+            
+        <div class="menyja" id="menyjakryesore">
+        <p>
+           
+           
+<a href="projekt.html"> BALLINA </a> | <a href="DergoLajm.html"> DERGO LAJM </a> | <a href="kontakt.html"> NA KONTAKTO </a> | <a href="AboutUs.html"> RRETH NESH </a> | <a href="Reklamoni.html">REKLAMONI ME NE</a> | <a href="fakte.html"> FAKTE </a> | <a href="tjera.html"> TJERA </a> | <a onclick="ThemeZeze();" href="#"> ERR&Euml;T </a> | <a onclick="ThemeNormale();" href="#">NORMAL</a>         
+        </p>
+        
+     
+        </div>
+        
+    <main>
+           <hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+           <div class="boxx"><br><br>
+           <form action="http://www.randyconnolly.com/tests/process.php" method="post" name="form1" id="form1">  
+               <H2>APLIKIM P&Euml;R PUN&Euml;SIM</H2>
+               <p>
+                   <label>
+                    Emri/Mbiemri: <input type="text" name="name" id="name" required/></label>
+                    <input name="hiddenField" type="hidden" id="hiddenField" value="Job Application form from ABC company">
+                    <br/>
+                    <br/>
+                    <label>
+                    E-mail: <input type="text" name="email" id="email"  placeholder="example@hotmail.com" required/> 
+                   </label>
+                   <br/><br/>
+                   <label>
+                    Mosha: <input name="age" type="text" id="age" size="4" maxlength="3"/>
+                   </label>
+                   <br><br>
+                   <p>P&#235;r &ccedil;far&#235; pune d&#235;shironi t&#235; aplikoni?</p>
+                   <label>
+                    <input name="job" type="radio" id="job" value="programmer" /> 
+                    Programer<br/>
+                    <input type="radio" name="job" id="designer" value="designer" /> 
+                    Dizajner<br/>
+                    <input type="radio" name="job" id="manager" value="manager" />
+                    Menagjer
+                   </label>
+                </p>
+                   </p>Ju lutem shkruani adres&#235;n tuaj: </p>
+                   <p>
+                       <label>
+                        <textarea name="address" id="address" cols="45" rows="5"></textarea>
+                       </label>
+                   </p>
+                   <p>Me cil&#235;n gjuh&#235; programuese punoni?</p>
+                   <p>
+                       <label>
+                        <input name="languages1" type="checkbox"  id="languages1" value="php" checked="checked" /> 
+                        php
+                       </label><br/>
+                       <label>
+                        <input type="checkbox" name="languages2" value="html" id="languages1" />
+                        html
+                       </label><br/>
+                       <label>
+                        <input type="checkbox" name="languages3" value="javascript" id="languages2" /> 
+                        javascript
+                       </label>
+                   </p>
+                   <p>Cil&#235;n dit&#235; t&#235; jav&#235;s jeni t&#235; lir&#235; p&#235;r intervist&#235;?<br>(p&#235;r t&#235; selektuar m&#235; shum&#235; se nj&#235; opsion p&#235;rdor CTRL)</p>
+                   <p>
+                       <label>
+                        <select name="daysavailable" size="5" multiple="multiple" id="daysavailable" >
+                        <option value="monday" >H&#235;n&#235;</option> 
+                        <option value="monday">Mart&#235;</option> 
+                        <option value="monday">M&#235;rkure</option> 
+                        <option value="monday">Enjte</option> 
+                        <option value="monday">Premte</option> 
+                        </select>
+                       </label>
+                   </p>
+                   <p>
+                       Si preferoni t&#235; kontaktoheni nga ne?<br>
+                   </p>
+                   <p>
+                       <label>
+                        <select name="kontaktimi" id="kontaktimi">
+                            <option value="phone">Telefon</option>
+                            <option vlue="email">E-mail</option>
+                            <option value="Adrese">Adres&#235;</option>
+                        </select>
+                       </label>
+                   </p>
+                   <p><br>
+                       <label>
+                           <input type="submit" name="button" id="button" value="Dergo"/>
+                       </label>
+                       <label>
+                           <input type="reset" name="button2" id="button2" value="Reseto"/>
+                       </label>
+                       <br/>
+                   </p>
+                   <p></br>
+                       <strong>*Informacionet q&#235; ju jepni nuk do t&#235; shp&#235;rndahen askund <br> dhe do t&#235; p&#235;rdoren vet&#235;m p&#235;r selektimin e pun&#235;tor&#235;ve. </strong>
+                   </p>
+                   
+           </form>
+                   </div>
+                   <hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+                   <div class="col-container" id="fundifaqes">
+                      <div class="col">
+                          <h2>Më shumë rreth nesh</h2>
+                          <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+                          <p><a href="PyetjetMTSH.html" target="_blank">Pyetjet më të shpeshta</a></p>
+                          <p><a href="Administrimi.html">Administrimi</a></p>
+                          <p><a href="AboutUs.html">Rreth nesh</a></p>
+                      </div>
+                  
+                      <div class="col">
+                          <h2>Navigim i shpejtë</h2>
+                          <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+                          <p><a href="kontakt.html">Na kontaktoni</a></p>
+                          <p><a href="Reklamoni.html">Reklamoni me ne</a></p>
+                          <p><a href="Punesohu.html">Pun&#235;sohu tek ne</a></p>
+                          <p><a href="Gazetat.html">Gazetat</a></p>
+                      </div>
+                  
+                      <div class="col">
+                          <h2>Linqe të ngjajshme</h2>
+                          <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+                          <p><a href="http://www.telegrafi.com">Telegrafi</a></p>
+                          <p><a href="http://www.gazetaexpress.com">Express</a></p>
+                          <p><a href="http://www.koha.net">Koha ditore</a></p>
+                      </div>
+                      <div class="col">
+                          <h2>Burimet</h2>
+                          <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+                          <p><a href="https://www.blogger.com/about/?bpli=1" >Blog</a></p>
+                          <p><a href="https://www.community.com/">Community</a></p>
+                          <p><a href="http://www.partners.com/">Partners</a></p>
+                          <p><a href="http://www.developers.com/">Developeres</a></p>
+                      </div>
+                      <div class="col">
+                          <h2>Rrjetet sociale</h2>
+                          <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+                          <p><a href="https://WWW.facebook.com">Facebook</a></p>
+                          <p><a href="https://WWW.instagram.com">Instagram</a></p>
+                          <p><a href="https://WWW.twitter.com">Twitter</a></p>
+                          <p><a href="https://WWW.youtube.com">Youtube</a></p>
+                          <p><a href="https://WWW.Google.com">Google</a></p>
+                      </div>
+                  </div>
+                      <footer class="footeri">
+                      <div class="row">
+                          <p id="text-1">Copyright © 2013 Domain Name - All Rights Reserved</p>
+                          <p id="text-2">Template by OS Templates</p>
+                      </div>
+                  </footer>
+                      </body>
+                  </html>
+                  
