@@ -1,132 +1,129 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset ="utf-8">
+        <!--Application Cache- mundesia e perdorimit te ueb faqes edhe kur jemi offline -->
         <html manifest="offline.appcache">
-            <title>SHOWBIZ (GRUPI 8)</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-              <link rel="stylesheet" href="css/reset.css" />
-              <link rel="stylesheet" href="css/style.css" />
-              <link rel="shortcut icon"  type="image/x-icon" href="images/favicon.ico" />       
-        </head>
-        <script src="js/AboutUs.js"></script>
-        <body onload="changeimage(2)">
+        <title>SHOWBIZ (GRUPI 8)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="css/reset.css" />
+          <link rel="stylesheet" href="css/style.css" />
+          <link rel="shortcut icon"  type="image/x-icon" href="images/favicon.ico" />
+          <script type="text/javascript" src="js/javascript.js"></script>
+          
+    </head>
+    <body>
       
-            <header>
-                <div class="navbar">
-                 
-                     <div class="nav">
-                         <a href="#menyjakryesore">Menyja kryesore</a>  | 
-                         <a href="#topstory">Storia Kryesore</a>  |
-                         <a href="#postetjera">Storiet</a> |
-                         <a href="#fundifaqes">Fundi i Faqes</a>  
-                     </div>
-                 
-            <div class="search-bar">
-            <form method="" action="">
-              <img src="images/search.png" alt="logoja e search-it">
-              <input type="text" name="search">
-            </form>
-          </div>
-            
-           
-                 </header>
-                
-            <div class="columnist">
-            <h1><span class="letterC">S</span>HOWBIZ</h1>
-            <p>T&#235; gjitha lajmet rreth showbiz-it vet&#235;m tek ne!</p>       
-            <img src="images/banerilogo.png" width="468" height="60" alt="LOGO 468 x 60px"/>  
-            </div>
-                <hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
-                
-                
-                
-                
-            <div class="menyja" id="menyjakryesore">
-            <p>
-               
-               
-                    <a href="projekt.html"> BALLINA </a>  |   <a href="#"> NA KONTAKTO </a>  |  <a href="#"> DERGO LAJM </a>  |  <a href="#"> DROPDOWN </a>   |   <a href="#"> PORTFOLIO </a>   |  <a href="#"> GALLERY </a>    |   <a href="#"> LONG TEXT LINK</a>
+        <header>
+            <div class="navbar">
+                 <div class="nav">
+                     <a href="#menyjakryesore">Menyja kryesore</a>  | 
+                     <a href="#topstory">Storia Kryesore</a>  |
+                     <a href="#postetjera">Storiet</a> |
+                     <a href="#fundifaqes">Fundi i Faqes</a>  
+                 </div>
              
-            </p>
+        <div class="search-bar">
+        <form method="GET" action="">
+          <img src="images/search.png" alt="logoja e search-it">
+          <input type="text" name="search">
+        </form>
+      </div>
+        
+       
+             </header>
             
-         
-            </div><hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+        <div class="columnist">
+        <h1><span class="letterC">S</span>HOWBIZ</h1>
+        <p>T&#235; gjitha lajmet rreth showbiz-it vet&#235;m tek ne!</p>       
+        <img src="images/banerilogo.png" width="468" height="60" alt="LOGO 468 x 60px"/>  
+        </div>
+            <hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+            
+            
+            
+            
+        <div class="menyja" id="menyjakryesore">
+        <p>
+           
+           
+<a href="projekt.html"> BALLINA </a> | <a href="DergoLajm.html"> DERGO LAJM </a> | <a href="kontakt.html"> NA KONTAKTO </a> | <a href="AboutUs.html"> RRETH NESH </a> | <a href="Reklamoni.html">REKLAMONI ME NE</a> | <a href="fakte.html"> FAKTE </a> | <a href="tjera.html"> TJERA </a> | <a onclick="ThemeZeze();" href="#"> ERR&Euml;T </a> | <a onclick="ThemeNormale();" href="#">NORMAL</a>         
+        </p>
+        
+     
+        </div>
+        
+    <main>
+           <hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
                 
             <div class="box" id="box-img"  >
                 <h1 id="AboutUsHeader"><b>RRETH NESH</b></h1>
-                <h3 id="AboutUsContent">SEPSE EDHE BOTA E SHOWBIZ-IT NUK ESHTE VETEM BARDHE E ZI.</h3>
+                <h3 id="AboutUsContent">SEPSE EDHE BOTA E SHOWBIZ-IT NUK &Euml;SHT&Euml; VET&Euml;M BARDH&Euml; E ZI.</h3>
                
             </div>
                 <br>
                 <div id="permbajtjaRRethNesh">
-                <p> Showbiz është gazetë online dedikuar lajmeve të aktualitetit nga vendi dhe bota për showbiz, me një mision për të hedhur dritë e për të bërë transparencë mbi çështje që ndikojnë në jetën dhe mirëqenien e njerëzve publik. Materialet dhe informacionet në këtë portal nuk mund të kopjohen, të shtypen ose të përdoren në çfarëdo forme tjetër për qëllime përfitimi, pa miratimin e drejtuesve të gazetes. Për ta shfrytëzuar materialin e këtij portali, obligoheni t'i pranoni Kushtet e përdorimit.
-                    Me lajmet tona kemi depertuar ne shume vende te botes dhe kemi fituar shume cmime si gazeta me e perfolur ne rrjetet sociale. <br>Disa nga dobite e gazetes tone jane:
+                <p> Showbiz &#235;sht&#235; gazet&#235; online dedikuar lajmeve t&#235; aktualitetit nga vendi dhe bota p&#235;r showbiz, me nj&#235; mision p&#235;r t&#235; hedhur drit&#235; e p&#235;r t&#235; b&#235;r&#235; transparenc&#235; mbi &ccedil;&#235;shtje q&#235; ndikojn&#235; n&#235; jet&#235;n dhe mir&#235;qenien e njer&#235;zve publik.
+                    Me lajmet tona kemi dep&#235;rtuar n&#235; shum&#235; vende t&#235; bot&#235;s dhe kemi fituar shum&#235; &ccedil;mime si gazeta m&#235; e p&#235;rfolur n&#235; rrjetet sociale. <br>Disa nga dobit&#235; e gazet&#235;s ton&#235; jan&#235;:
                     <ul id="lista">
-                        <li>Perkushtimi</li>
+                        <li>P&#235;rkushtimi</li>
                         <li>Veprimtaria</li>
-                        <li>Lexueshmeria</li>
-                        <li>Shikueshmeria</li>
+                        <li>Lexueshm&#235;ria</li>
+                        <li>Shikueshm&#235;ria</li>
                     </ul>
-    
+                    Materialet dhe informacionet n&#235; k&#235;t&#235; portal nuk mund t&#235; kopjohen, t&#235; shtypen ose t&#235; p&#235;rdoren n&#235; &ccedil;far&#235;do forme tjet&#235;r p&#235;r q&#235;llime p&#235;rfitimi, pa miratimin e drejtuesve t&#235; gazetes. P&#235;r ta shfryt&#235;zuar materialin e k&#235;tij portali, obligoheni t'i pranoni Kushtet e p&#235;rdorimit.
                 </p>
                 </div>
 
+                <hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
+                <div class="col-container" id="fundifaqes">
+                   <div class="col">
+                       <h2>Më shumë rreth nesh</h2>
+                       <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+                       <p><a href="PyetjetMTSH.html" target="_blank">Pyetjet më të shpeshta</a></p>
+                       <p><a href="Administrimi.html">Administrimi</a></p>
+                       <p><a href="AboutUs.html">Rreth nesh</a></p>
+                   </div>
                
-    
-      
-            <hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
- <div class="col-container" id="fundifaqes">
-    <div class="col">
-        <h2>Më shumë rreth nesh</h2>
-        <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
-        <p><a href="PyetjetMTSH.html">Pyetjet më të shpeshta</a></p>
-        <p><a href="Administrimi.html">Administrimi i moshës dhe politikat e telefonit mobil</a></p>
-        <p><a href="AboutUs.html">Rreth neshë</a></p>
-    </div>
-
-    <div class="col">
-        <h2>Navigim i shpejtë</h2>
-        <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
-        <p><a href=" ">Na kontaktoni</a></p>
-        <p><a href="Reklamoni.html">Reklamoni me ne</a></p>
-        <p><a href=" ">Karriera</a></p>
-        <p><a href=" ">Gazetat</a></p>
-    </div>
-
-    <div class="col">
-        <h2>Linqe të ngjajshme</h2>
-        <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
-        <p><a href="http://www.telegrafi.com">Telegrafi</a></p>
-        <p><a href="http://www.gazetaexpress.com">Express</a></p>
-        <p><a href="http://www.koha.net">Koha ditore</a></p>
-    </div>
-    <div class="col">
-        <h2>Burimet</h2>
-        <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
-        <p><a href="">Blog</a></p>
-        <p><a href="">Community</a></p>
-        <p><a href="">Partners</a></p>
-        <p><a href="">Developeres</a></p>
-        <p><a href="">FAQ-s</a></p>
-    </div>
-    <div class="col">
-        <h2>Rrjetet sociale</h2>
-        <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
-        <p><a href="https://WWW.facebook.com">Facebook</a></p>
-        <p><a href="https://WWW.instagram.com">Instagram</a></p>
-        <p><a href="https://WWW.twitter.com">Twitter</a></p>
-        <p><a href="https://WWW.youtube.com">Youtube</a></p>
-        <p><a href="https://WWW.Google.com">Google</a></p>
-    </div>
-</div>
-    <footer class="footeri">
-    <div class="row">
-        <p id="text-1">Copyright © 2013 Domain Name - All Rights Reserved</p>
-        <p id="text-2">Template by OS Templates</p>
-    </div>
-</footer>
-
-        </body>
- 
-</html>
+                   <div class="col">
+                       <h2>Navigim i shpejtë</h2>
+                       <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+                       <p><a href="kontakt.html">Na kontaktoni</a></p>
+                       <p><a href="Reklamoni.html">Reklamoni me ne</a></p>
+                       <p><a href="Punesohu.html">Pun&#235;sohu tek ne</a></p>
+                       <p><a href="Gazetat.html">Gazetat</a></p>
+                   </div>
+               
+                   <div class="col">
+                       <h2>Linqe të ngjajshme</h2>
+                       <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+                       <p><a href="http://www.telegrafi.com">Telegrafi</a></p>
+                       <p><a href="http://www.gazetaexpress.com">Express</a></p>
+                       <p><a href="http://www.koha.net">Koha ditore</a></p>
+                   </div>
+                   <div class="col">
+                       <h2>Burimet</h2>
+                       <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+                       <p><a href="https://www.blogger.com/about/?bpli=1" >Blog</a></p>
+                       <p><a href="https://www.community.com/">Community</a></p>
+                       <p><a href="http://www.partners.com/">Partners</a></p>
+                       <p><a href="http://www.developers.com/">Developeres</a></p>
+                   </div>
+                   <div class="col">
+                       <h2>Rrjetet sociale</h2>
+                       <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+                       <p><a href="https://WWW.facebook.com">Facebook</a></p>
+                       <p><a href="https://WWW.instagram.com">Instagram</a></p>
+                       <p><a href="https://WWW.twitter.com">Twitter</a></p>
+                       <p><a href="https://WWW.youtube.com">Youtube</a></p>
+                       <p><a href="https://WWW.Google.com">Google</a></p>
+                   </div>
+               </div>
+                   <footer class="footeri">
+                   <div class="row">
+                       <p id="text-1">Copyright © 2013 Domain Name - All Rights Reserved</p>
+                       <p id="text-2">Template by OS Templates</p>
+                   </div>
+               </footer>
+                   </body>
+               </html>
