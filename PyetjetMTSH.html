@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon"  type="image/x-icon" href="images/favicon.ico" />
+    <script type="text/javascript" src="js/javascript.js"></script>
+    
+</head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -23,6 +26,7 @@
   text-align: left;
   outline: none;
   font-size: 15px;
+  font-family:Georgia,Myriad-Roman,AdobeInvisFont;
 }
 
 .active, .collapsible:hover {
@@ -44,7 +48,6 @@
 
   <header>
     <div class="navbar">
-     
          <div class="nav">
              <a href="#menyjakryesore">Menyja kryesore</a>  | 
              <a href="#topstory">Storia Kryesore</a>  |
@@ -53,7 +56,7 @@
          </div>
      
 <div class="search-bar">
-<form method="" action="">
+<form method="GET" action="">
   <img src="images/search.png" alt="logoja e search-it">
   <input type="text" name="search">
 </form>
@@ -61,25 +64,20 @@
 
 
      </header>
-
-
-     <div class="columnist">
-      <h1><span class="letterC">S</span>HOWBIZ</h1>
-      <p>T&#235; gjitha lajmet rreth showbiz-it vet&#235;m tek ne!</p>       
-      <img src="images/banerilogo.png" width="468" height="60" alt="LOGO 468 x 60px"/>  
-      </div>
-          <hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
-          
-          
-          
-          
-      <div class="menyja" id="menyjakryesore">
-      <p>
-         
-         
-              <a href="projekt.html"> BALLINA </a>  |   <a href="kontakt.html"> NA KONTAKTO </a>  |  <a href="#"> DERGO LAJM </a>  |  <a href="#"> DROPDOWN </a>   |   <a href="#"> PORTFOLIO </a>   |  <a href="#"> GALLERY </a>    |   <a href="#"> LONG TEXT LINK</a>
+    
+<div class="columnist">
+<h1><span class="letterC">S</span>HOWBIZ</h1>
+<p>T&#235; gjitha lajmet rreth showbiz-it vet&#235;m tek ne!</p>       
+<img src="images/banerilogo.png" width="468" height="60" alt="LOGO 468 x 60px"/>  
+</div>
+    <hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
        
-      </p>
+<div class="menyja" id="menyjakryesore">
+<p>
+   
+   
+<a href="projekt.html"> BALLINA </a> | <a href="DergoLajm.html"> DERGO LAJM </a> | <a href="kontakt.html"> NA KONTAKTO </a> | <a href="AboutUs.html"> RRETH NESH </a> | <a href="Reklamoni.html">REKLAMONI ME NE</a> | <a href="fakte.html"> FAKTE </a> | <a href="tjera.html"> TJERA </a> | <a onclick="ThemeZeze();" href="#"> ERR&Euml;T </a> | <a onclick="ThemeNormale();" href="#">NORMAL</a>         
+</p>
 
     </div><hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
 
@@ -133,55 +131,54 @@ for (i = 0; i < coll.length; i++) {
 <p> </p>
 
 <hr style="display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; margin: 0; padding: 0">
-<div class="col-container" id="fundifaqes">
-   <div class="col">
-       <h2>Më shumë rreth nesh</h2>
-       <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
-       <p><a href="PyetjetMTSH.html">Pyetjet më të shpeshta</a></p>
-       <p><a href="Administrimi.html">Administrimi i moshës dhe politikat e telefonit mobil</a></p>
-       <p><a href="AboutUs.html">Rreth neshë</a></p>
-   </div>
+ <div class="col-container" id="fundifaqes">
+    <div class="col">
+        <h2>Më shumë rreth nesh</h2>
+        <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+        <p><a href="PyetjetMTSH.html" target="_blank">Pyetjet më të shpeshta</a></p>
+        <p><a href="Administrimi.html">Administrimi</a></p>
+        <p><a href="AboutUs.html">Rreth nesh</a></p>
+    </div>
 
-   <div class="col">
-       <h2>Navigim i shpejtë</h2>
-       <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
-       <p><a href="kontakt.html">Na kontaktoni</a></p>
-       <p><a href="Reklamoni.html">Reklamoni me ne</a></p>
-       <p><a href=" ">Karriera</a></p>
-       <p><a href=" ">Gazetat</a></p>
-   </div>
+    <div class="col">
+        <h2>Navigim i shpejtë</h2>
+        <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+        <p><a href="kontakt.html">Na kontaktoni</a></p>
+        <p><a href="Reklamoni.html">Reklamoni me ne</a></p>
+        <p><a href="Punesohu.html">Pun&#235;sohu tek ne</a></p>
+        <p><a href="Gazetat.html">Gazetat</a></p>
+    </div>
 
-   <div class="col">
-       <h2>Linqe të ngjajshme</h2>
-       <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
-       <p><a href="http://www.telegrafi.com">Telegrafi</a></p>
-       <p><a href="http://www.gazetaexpress.com">Express</a></p>
-       <p><a href="http://www.koha.net">Koha ditore</a></p>
-   </div>
-   <div class="col">
-       <h2>Burimet</h2>
-       <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
-       <p><a href="">Blog</a></p>
-       <p><a href="">Community</a></p>
-       <p><a href="">Partners</a></p>
-       <p><a href="">Developeres</a></p>
-       <p><a href="">FAQ-s</a></p>
-   </div>
-   <div class="col">
-       <h2>Rrjetet sociale</h2>
-       <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
-       <p><a href="https://WWW.facebook.com">Facebook</a></p>
-       <p><a href="https://WWW.instagram.com">Instagram</a></p>
-       <p><a href="https://WWW.twitter.com">Twitter</a></p>
-       <p><a href="https://WWW.youtube.com">Youtube</a></p>
-       <p><a href="https://WWW.Google.com">Google</a></p>
-   </div>
+    <div class="col">
+        <h2>Linqe të ngjajshme</h2>
+        <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+        <p><a href="http://www.telegrafi.com">Telegrafi</a></p>
+        <p><a href="http://www.gazetaexpress.com">Express</a></p>
+        <p><a href="http://www.koha.net">Koha ditore</a></p>
+    </div>
+    <div class="col">
+        <h2>Burimet</h2>
+        <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+        <p><a href="https://www.blogger.com/about/?bpli=1" >Blog</a></p>
+        <p><a href="https://www.community.com/">Community</a></p>
+        <p><a href="http://www.partners.com/">Partners</a></p>
+        <p><a href="http://www.developers.com/">Developeres</a></p>
+    </div>
+    <div class="col">
+        <h2>Rrjetet sociale</h2>
+        <hr style="width:95%;margin:0 5px 0 0;display: block; height: 1px; border: 0; border-top: 4px solid #E1E1E1; padding: 0">
+        <p><a href="https://WWW.facebook.com">Facebook</a></p>
+        <p><a href="https://WWW.instagram.com">Instagram</a></p>
+        <p><a href="https://WWW.twitter.com">Twitter</a></p>
+        <p><a href="https://WWW.youtube.com">Youtube</a></p>
+        <p><a href="https://WWW.Google.com">Google</a></p>
+    </div>
 </div>
-   <footer class="footeri">
-   <div class="row">
-       <p id="text-1">Copyright © 2013 Domain Name - All Rights Reserved</p>
-       <p id="text-2">Template by OS Templates</p>
-   </div>
+    <footer class="footeri">
+    <div class="row">
+        <p id="text-1">Copyright © 2013 Domain Name - All Rights Reserved</p>
+        <p id="text-2">Template by OS Templates</p>
+    </div>
 </footer>
 </body>
 </html>
