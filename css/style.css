@@ -353,7 +353,7 @@ body {
     width: 50%;
 }
 #reklamoni{
-    font-size:16px;
+    font-size:20px;
     width:400px;
     height:200px;
     margin:-20px 25px 80px 425px;
@@ -440,4 +440,3 @@ body {
       background-color: orange;
       border-color: black;
   }
-  
